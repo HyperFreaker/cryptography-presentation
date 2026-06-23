@@ -242,7 +242,9 @@
                             <div class="text-center text-cyan-500"><i class="fa-solid fa-arrow-down"></i></div>
                             <div class="glass-panel hover-pop !p-4 !rounded-lg border-l-4 border-l-cyan-400 text-white shadow-lg text-center">③ How Touch 'n Go Payment Works</div>
                             <div class="text-center text-cyan-500"><i class="fa-solid fa-arrow-down"></i></div>
-                            <div class="glass-panel hover-pop !p-4 !rounded-lg border-l-4 border-l-cyan-400 text-white shadow-lg text-center opacity-60 scale-95">... Cryptographic Techniques & Future</div>
+                            <div class="glass-panel hover-pop !p-4 !rounded-lg border-l-4 border-l-cyan-400 text-white shadow-lg text-center">④ Cryptographic Techniques & Real-world Applications</div>
+                            <div class="text-center text-cyan-500"><i class="fa-solid fa-arrow-down"></i></div>
+                            <div class="glass-panel hover-pop !p-4 !rounded-lg border-l-4 border-l-cyan-400 text-white shadow-lg text-center opacity-60 scale-95">⑤ Future & Reflection</div>
                         </div>
                     </div>
 
@@ -376,7 +378,8 @@
                         </h3>
                         <p class="text-3xl font-black leading-snug text-white drop-shadow-lg">How does cryptography protect every step?</p>
                     </div>
-                </div>
+                    </div>
+                    </div>
             </section>
 
             <!-- Slide 5: Security Services -->
@@ -396,7 +399,7 @@
                     <div class="hover-pop absolute top-0 right-1/4 glass-panel !px-6 !py-4 !rounded-2xl text-white font-bold text-xl flex items-center gap-4 transform translate-x-1/2 drop-shadow-xl"><i class="fa-solid fa-shield-halved text-green-400 text-3xl icon-glow-green"></i> Integrity</div>
 
                     <div class="hover-pop absolute bottom-12 left-1/4 glass-panel !px-6 !py-4 !rounded-2xl text-white font-bold text-xl flex items-center gap-4 transform -translate-x-1/2 drop-shadow-xl"><i class="fa-solid fa-user-shield text-purple-400 text-3xl" style="filter: drop-shadow(0 0 10px rgba(208, 140, 255, 0.7));"></i> Authentication</div>
-                    <div class="hover-pop absolute bottom-12 right-1/4 glass-panel !px-6 !py-4 !rounded-2xl text-white font-bold text-xl flex items-center gap-4 transform translate-x-1/2 drop-shadow-xl"><i class="fa-solid fa-signature text-amber-400 text-3xl icon-glow-amber"></i> Digital Signature</div>
+                    <div class="hover-pop absolute bottom-12 right-1/4 glass-panel !px-6 !py-4 !rounded-2xl text-white font-bold text-xl flex items-center gap-4 transform translate-x-1/2 drop-shadow-xl"><i class="fa-solid fa-file-contract text-amber-400 text-3xl icon-glow-amber"></i> Non-repudiation</div>
 
                     <div class="hover-pop absolute bottom-[-40px] left-1/2 glass-panel !px-6 !py-4 !rounded-2xl text-white font-bold text-xl flex items-center gap-4 transform -translate-x-1/2 drop-shadow-xl"><i class="fa-solid fa-server text-blue-400 text-3xl icon-glow-cyan"></i> Availability</div>
 
@@ -524,7 +527,7 @@
 
                     <div class="glass-panel hover-pop flex flex-col items-center justify-center p-8 border-t-4 border-t-amber-400 text-white">
                         <span class="text-5xl mb-4 text-amber-400 icon-glow-amber"><i class="fa-brands fa-bitcoin"></i></span>
-                        <span class="font-bold text-xl mb-4 drop-shadow-md">Bitcoin</span>
+                        <span class="font-bold text-xl mb-4 drop-shadow-md">Blockchain</span>
                         <span class="text-cyan-500 text-lg mb-4"><i class="fa-solid fa-arrow-down"></i></span>
                         <span class="text-base text-center font-bold text-amber-200 leading-tight">Hash &amp;<br>Digital Signature</span>
                     </div>
@@ -618,11 +621,11 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td>Unlock phone</td>
-                                <td>Are you really the user?</td>
-                                <td class="text-white font-bold">Authentication</td>
+                                <td>Verify Server Identity</td>
+                                <td>Are you connecting to the real bank?</td>
+                                <td class="text-white font-bold">Digital Certificates (PKI)</td>
                                 <td>Authentication</td>
-                                <td class="highlight-red">Unauthorized access</td>
+                                <td class="highlight-red">Phishing / Spoofing</td>
                             </tr>
                             <tr>
                                 <td>Enter password</td>
@@ -634,21 +637,21 @@
                             <tr>
                                 <td>Connect securely</td>
                                 <td>Can others read my data?</td>
-                                <td class="highlight-cyan">TLS + AES</td>
+                                <td class="highlight-cyan">TLS + AES (Hybrid)</td>
                                 <td>Confidentiality</td>
                                 <td class="highlight-red">Data interception</td>
                             </tr>
                             <tr>
                                 <td>Exchange session key</td>
                                 <td>How do we share keys safely?</td>
-                                <td class="highlight-amber">Asymmetric Encryption</td>
+                                <td class="highlight-amber">Asymmetric (ECDHE)</td>
                                 <td>Confidentiality</td>
                                 <td class="highlight-red">Man-in-the-Middle Attack</td>
                             </tr>
                             <tr>
                                 <td>Scan QR payment</td>
                                 <td>Has payment data changed?</td>
-                                <td class="highlight-green">Hash / Integrity Check</td>
+                                <td class="highlight-green">Hash / MAC Check</td>
                                 <td>Integrity</td>
                                 <td class="highlight-red">Transaction manipulation</td>
                             </tr>
@@ -656,20 +659,20 @@
                                 <td>Approve payment</td>
                                 <td>Who approved this payment?</td>
                                 <td class="highlight-amber">Digital Signature</td>
-                                <td>Auth + Non-repudiation</td>
+                                <td>Auth & Non-repudiation</td>
                                 <td class="highlight-red">Identity fraud</td>
                             </tr>
                             <tr>
-                                <td>Transaction history</td>
+                                <td>Transaction log</td>
                                 <td>Can users deny payment?</td>
-                                <td class="text-white font-bold">Non-repudiation</td>
+                                <td class="text-white font-bold">Digital Signature & Hash Chain</td>
                                 <td>Non-repudiation</td>
                                 <td class="highlight-red">Disputes / Fraud</td>
                             </tr>
                             <tr>
                                 <td>Service availability</td>
                                 <td>Can users access anytime?</td>
-                                <td class="text-white font-bold">Availability Mechanisms</td>
+                                <td class="text-white font-bold">Distributed Architecture</td>
                                 <td>Availability</td>
                                 <td class="highlight-red">Service downtime</td>
                             </tr>
@@ -678,7 +681,7 @@
                 </div>
 
                 <p class="mt-8 text-2xl font-bold text-white text-center drop-shadow-lg">
-                    Cryptography is not one algorithm — it is a <span class="text-cyan-400">coordinated system</span> of technologies.
+                    Cryptography is not one algorithm, it is a <span class="text-cyan-400">coordinated system</span> of technologies.
                 </p>
             </section>
 
